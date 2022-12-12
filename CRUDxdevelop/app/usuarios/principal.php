@@ -1,5 +1,9 @@
 <?php
 session_start();
+$_SESSION['autenticado'] = true;
+if ($_SESSION['autenticado'] == false) {
+    header("Location: ../../index.php");
+}
 
 $dir = "../back/fotosperfil/";
 ?>
@@ -39,9 +43,23 @@ $dir = "../back/fotosperfil/";
 <body>
     <header>
         <?php
-        include '../../header.php';
         include_once '../back/select.php'
         ?>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">XDEVELOP</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    </ul>
+                    <form class="d-flex" method="POST" action="logout.php">
+                        <button class="btn btn-outline-success" type="submit" href="">Cerrar Sesion</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
     </header>
     <main>
         <div class="titulo">
@@ -133,7 +151,6 @@ $dir = "../back/fotosperfil/";
                     inputNombre.value = data.Nombre
                     inputApellidos.value = data.Apellidos
                     inputEmail.value = data.Email
-                    inputContrasena.value = data.Contrasena
                     Foto.src = '<?= $dir ?>' + data.id + '.jpg'
 
                 }).catch(err => console.log(err))

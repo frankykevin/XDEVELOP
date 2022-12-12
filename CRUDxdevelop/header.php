@@ -10,8 +10,8 @@
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             </ul>
-            <form class="d-flex">
-                <button class="btn btn-outline-success" type="button" onclick="location.href='index.php'">Cerrar Sesion</button>
+            <form class="d-flex" method="POST" action="/app/usuarios/logout.php">
+                <button class="btn btn-outline-success" type="submit" href="">Cerrar Sesion</button>
             </form>
         </div>
     </div>

@@ -21,7 +21,7 @@
                         </div>
                         <div class="mb-3">
                             <span>E-mail:</span>
-                            <input type="text" class="form-control" name="email" id="email" required>
+                            <input type="email" class="form-control" name="email" id="email" required>
                         </div>
                         <div class="mb-3">
                             <img id="img_perfil" width="100">
@@ -29,10 +29,6 @@
                         <div class="mb-3">
                             <span>Foto de perfil:</span>
                             <input type="file" name="foto" id="foto" class="form-control-file" accept="image/jpeg">
-                        </div>
-                        <div class="mb-3">
-                            <span>Contraseña:</span>
-                            <input type="password" class="form-control" name="contrasena" id="contrasena" required>
                         </div>
                     </div>
                     <div>

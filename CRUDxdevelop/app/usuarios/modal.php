@@ -1,4 +1,5 @@
 <!-- Modal -->
+
 <div class="modal fade" id="modalAdd" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
@@ -11,18 +12,15 @@
                     <div class="mb-3">
                         <div class="mb-3">
                             <span style="align-content: start;">Nombre(s):</span>
-                            <input type="text" class="form-control" name="nombre1" id="nombre1" required>
+                            <input type="text" class="form-control" name="nombre" id="nombre">
                         </div>
                         <div class="mb-3">
                             <span>Apellidos:</span>
-                            <input type="text" class="form-control" name="apellidos" id="apellidos" required>
+                            <input type="text" class="form-control" name="apellidos" id="apellidos">
                         </div>
                         <div class="mb-3">
                             <span>E-mail:</span>
-                            <input type="text" class="form-control" name="email" id="email" required>
-                        </div>
-                        <div class="mb-3">
-                            <img id="img_perfil" width="100">
+                            <input type="email" class="form-control" name="email" id="email">
                         </div>
                         <div class="mb-3">
                             <span>Foto de perfil:</span>
