@@ -1,3 +1,3 @@
 Hola, para el que valla a probar el sistema, le agregue un Login, el usuario y contraseña
 se crean con el SQL, para poder entrar el mail es yero991@hotmail.com y la contraseña es
-xdevelop. Gracias
+xdevelop. Gracias.
